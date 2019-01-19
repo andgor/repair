@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Прием в ремонт</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="start.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="title">Прием в ремонт</div>
+            <div class="name-company">
+                <div class="name-company_name">Сервисный центр "TopCase"</div>
+            </div>
+            <div class="details-company">
+                <div class="details-company_adress">Адрес:
+                    <select class="details-company_adress-select" name="adress" id="adress">
+                        <option>г. Чехов, Симферопольское шоссе д.1 ТЦ «Карусель», тел: +79856984797, время работы: ежедневно с 10 до 21-30</option>
+                        <option>г. Климовск, ул. Симферопольская д.35 ТЦ «Гран Сити», тел: +79263280321, время работы: ежедневно с 10 до 20-30</option>
+                        <option>г. Подольск, Бородинский бульвар д.5 Теле2, тел: +79776631368, время работы: ежедневно с 10 до 21-30</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <section class="device">
+            <div class="order">Квитанция о приеме в ремонт № <input type="text" class="order-number" name="order-number" id="order-number" size="1"> от <input type="date" name="order-date" id="order-date"> 
+            </div>
+            <div class="device_container">
+                <div class="device_left">
+                    <div class="device_model">
+                        <label for="model">Модель:</label>
+                        <input type="text" name="model" id="model" placeholder="iPhone 5S" required ></input>
+                    </div>
+
+                    <div class="device_imei">
+                        <label for="imei">Серийный номер или IMEI:</label>
+                        <input type="text" name="imei" id="imei" placeholder="123456789123456" required> 
+                    </div>
+
+                    <div class="device_status">Внешний вид устройства:
+                        <div class="device_status-display">Дисплей
+                            <select name="device_status-display-select" id="display-status">
+                                <option>разбит</option>
+                                <option>с потертостями</option>
+                                <option>как новый</option>
+                            </select>
+                        </div>
+                        <div class="device_status-body">Корпус
+                            <select name="device_status-body-select" id="body-status">
+                                <option>сколы и потертости</option>
+                                <option>царапины</option>
+                                <option>как новый</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="device_defect">
+                        <label for="device_defect">Неисправность со слов клиента:</label>
+                        <textarea name="device_defect" id="device_defect" cols="100" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="device_right">
+                    <div class="device_client">
+                        <div class="device_client-name">
+                            <label for="client-name">Фамилия и имя клиента:</label>
+                            <input type="text" name="client-name" id="client-name">
+                        </div>
+                        <div class="device_client-phone">
+                            <label for="client-phone">Номер телефона клиента:</label>
+                            <input type="tel" name="client-phone" id="client-phone">
+                        </div>
+                    </div>
+
+                    <div class="device_repairs-price">
+                        <label for="repairs-price">Ориентировочная стоимость ремонта:</label>
+                        <input type="text" size="3" name="repairs-price" id="repairs-price"><span>₽</span>
+                    </div>
+
+                    <div class="device_repairs-prepay">
+                        <label for="repairs-prepay">Предоплата/Диагностика:</label>
+                        <input type="text" size="3" name="repairs-prepay" id="repairs-prepay"><span>₽</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="conditions">
+            <p>Диагностика составляет 5 рабочих дней. Выполнение ремонта в течение 30 дней производится при наличии комплектующих в ремонтной мастерской. Срок ремонта может увеличиться при заказе комплектующих из других регионов.</p>
+            <p>Принятые на ремонт телефоны с дефектами (не включается, попадание жидкости, подзарядки другими зарядными устройствами, а также со скрытыми дефектами которые невозможно выявить при визуальном осмотре) ремонтируются без гарантии. Гарантия предоставляется исключительно на замененные детали и произведенные работы. Срок гарантии – 14 дней (с момента выдачи телефона на руки заказчику). Гарантийные требования должны быть предъявлены в течение указанного гарантийного срока, после обнаружения неисправности. Телефон выдается из ремонта при предъявлении квитанции (при утере - наличие паспорта заказчика). После произведенных работ ремонтная мастерская не несет ответственности за утрату работоспособности телефона в случае если аппарат подвергся различного рода механическим воздействиям, либо использованию ненадлежащим образом нарушающим правила эксплуатации.</p>
+            <p>Ремонтная мастерская не несет ответственности за возможную потерю данных находящихся в программном обеспечении телефона, в связи с заменой носителей информации или установкой нового программного обеспечения, а также за забытые в устройстве сим-карты и карты памяти. Заказчик принимает на себя риск, связанный с возможными проявлениями скрытых дефектов в сданной на ремонт аппаратуре.</p>
+            <p>В случае если оборудование после уведомления клиента, не забирается клиентом в течении 40 дней, ремонт утилизируется.</p>
+            <p>Подпись клиента обозначает, что он разрешает вскрытие своего устройства без своего присутствия. </p>
+            <p>Квитанция заполнена верно. С условиями ремонта, изложенными выше, ознакомлен и согласен.</p>
+            <div class="signature_container">
+                <p>Подпись заказчика: ______________________</p>
+                <p>Подпись приемщика: ______________________</p>
+            </div>
+        </section>
+
+    <header class="header">
+        <div class="name-company">
+            <div class="name-company_name">Сервисный центр "TopCase"</div>
+        </div>
+        <div class="details-company">
+        <div class="details-company_adress details-company_adress2">Адрес:
+            <span id="adress2">г. Чехов, Симферопольское шоссе д.1 ТЦ «Карусель», тел: +79856984797, время работы: ежедневно с 10
+            до 21-30</span>
+            </div>
+        </div>
+    </header>
+
+        <section class="device device2">
+            <div class="order order2">Акт выполненных работ № <span class="order-number" id="order-number2"></span> от __.__.2019г.
+            </div>
+            <div class="device_container">
+                <div class="device_left">
+                    <div class="device_model">
+                        <label for="model2">Модель:</label>
+                        <span id="model2"></span>
+                    </div>
+        
+                    <div class="device_imei">
+                        <label for="imei2">Серийный номер или IMEI:</label>
+                        <span id="imei2"></span>
+                        
+                    </div>
+        
+                    <div class="device_status">Внешний вид устройства:
+                        <div class="device_status-display">Дисплей
+                            <span id="display-status2">разбит</span>
+                        </div>
+                        <div class="device_status-body">Корпус
+                            <span id="body-status2">сколы и потертости</span>
+                        </div>
+                    </div>
+                </div>
+                
+                           
+
+                <div class="device_right">
+                    <div class="device_client">
+                        <div class="device_client-name">
+                            <label for="client-name2">Фамилия и имя клиента:</label>
+                            <span id="client-name2"></span>
+                        </div>
+                        <div class="device_client-phone">
+                            <label for="client-phone2">Номер телефона клиента:</label>
+                            <span id="client-phone2"></span>
+                        </div>
+                    </div>
+        
+                    <div class="device_repairs-price">
+                        <label for="repairs-price2">Ориентировочная стоимость ремонта:</label>
+                        <span id="repairs-price2"></span><span>₽</span>
+                    </div>
+        
+                    <div class="device_repairs-prepay">
+                        <label for="repairs-prepay2">Предоплата/Диагностика:</label>
+                        <span id="repairs-prepay2"></span><span>₽</span>
+                    </div>
+                </div>
+            </div>
+            <div class="device_defect">
+                <label for="device_defect">Неисправность со слов клиента:</label>
+                <!-- <textarea name="device_defect" id="device_defect2" cols="100" rows="2"></textarea> -->
+                <span id="device_defect2"></span>
+            </div>
+
+            <div class="notes">
+                Заметки мастера:
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Устройство продемонстрировано и получено на руки.</p>
+            <p>Претензий не имею.</p>
+            <p>Дата получения: ___.___.2019</p>
+            <p>Подпись заказчика _____________</p>
+        </footer>
+
+        <!-- <div class="button-container"> -->
+            <input class="buttonPrint" type="button" value="Печать" onclick="print()"></input>
+        <!-- </div> -->
+        <!-- <div class="manual">Все заполнил? тогда жми "Печать" и убери галочки "Верхние и нижние колонтитулы"</div> -->
+    </div>
+
+</body>
+</html>

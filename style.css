@@ -1,0 +1,286 @@
+body {
+    background-color: #1D1B26;
+    color: white;
+}
+input,
+select,
+textarea {
+    background-color: #1D1B26;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    font-family: 'Calibri';
+    font-size: 1.5rem;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.name-company{
+    display: none;
+}
+
+.details-company_inn {
+    display: none;
+}
+
+.details-company_worktime {
+    display: none;
+}
+
+.device {
+        margin-bottom: 30px;
+}
+
+.device2 {
+    display: none;
+}
+
+.details-company_adress2 {
+    display: none;
+}
+
+.conditions {
+    display: none;
+}
+
+.footer {
+    display: none;
+
+}
+
+.manual {
+    font-size: 2rem;
+        text-align: center;
+
+}
+
+.buttonPrint {
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.buttonPrint:hover {
+    background-color: white;
+    color: #1D1B26;
+    transition: all 400ms ease;
+}
+
+
+
+@media print{
+    body,
+    input,
+    select,
+    textarea {
+        background-color: white;
+        color: black;
+    }
+    .container {
+        width: 210mm;
+        height: 270mm;
+        font-family: 'Calibri';
+        font-size: 1rem;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .header {
+        font-size: 9pt;
+    }
+
+    .device {
+        margin-bottom: 0px;
+    }
+
+    .device2 {
+        display: block;
+    }
+
+    .details-company_adress2 {
+        display: block;
+    }
+
+    .device_container {
+        display: flex;
+        flex-direction: row;
+        /* height: 150px; */
+    }
+    .device_left {
+        width: 48%;
+    }
+    .device_right {
+        width: 48%;
+    }
+    
+    .name-company{
+        display: block;
+    }
+    
+    .details-company_inn {
+        display: block;
+    }
+
+    .details-company_adress-select{
+        border: none;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        font-family: 'Calibri';
+        font-size: 9pt;
+    }
+
+    .details-company_worktime {
+        display: block;
+    }
+    
+    .order {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .order2 {
+        margin-bottom: 20px;
+    }
+
+    .order-number {
+         border: none;
+         appearance: none;
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         font-family: 'Calibri';
+    }
+
+    #order-date {
+         border: none;
+         appearance: none;
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         font-family: 'Calibri';
+    }
+
+    #model {
+        border: none;
+        font-family: 'Calibri';
+        font-size: 12pt;
+    }
+
+    #imei {
+        border: none;
+        font-family: 'Calibri';
+        font-size: 12pt;
+    }
+
+    #display-status {
+         border: none;
+         appearance: none;
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         font-family: 'Calibri';
+         font-size: 12pt;
+    }
+
+    #body-status {
+         border: none;
+         appearance: none;
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         font-family: 'Calibri';
+         font-size: 12pt;
+    }
+/* 
+    .device_defect {
+        display: flex;
+    } */
+
+    #device_defect {
+         border: none;
+         appearance: none;
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         font-family: 'Calibri';
+         font-size: 12pt;
+    }
+
+    #device_defect2 {
+         border: none;
+         appearance: none;
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         font-family: 'Calibri';
+         font-size: 12pt;
+    }
+    
+    #client-name {
+         border: none;
+         font-family: 'Calibri';
+         font-size: 12pt;
+    }
+    
+    #client-phone {
+         border: none;
+         font-family: 'Calibri';
+         font-size: 12pt;
+    }
+    
+    #repairs-price {
+         border: none;
+         font-family: 'Calibri';
+         font-size: 12pt;
+         text-align: center;
+    }
+
+    #repairs-prepay {
+         border: none;
+         font-family: 'Calibri';
+         font-size: 12pt;
+         text-align: center;
+    }
+
+    .conditions {
+        display: block;
+        /* margin-bottom: 60px; */
+        font-size: 9pt;
+        border-bottom: 1px dashed black;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+
+    .signature_container {
+        display: flex;
+        justify-content: space-around;
+        font-size: 12pt;
+    }
+    
+    .footer {
+        display: block;
+        font-size: 12pt;
+    }
+
+    .manual {
+        display: none;
+    }
+
+    .notes {
+        height: 80px;
+    }
+
+    .buttonPrint {
+        display: none;
+    }
+}
